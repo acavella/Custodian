@@ -41,7 +41,7 @@ Function Get-UserLockout
 			EventData[Data[@Name='TargetUserName']='$Account']]"
 		}
 		$Events=Get-WinEvent @GweParams
-		$Events | foreach {$_.Properties[1].Value}
+		$Events | ForEach-Object {$_.Properties[1].Value}
   	}
 
 	End{}
