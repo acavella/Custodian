@@ -12,13 +12,12 @@ Function Get-UserLockout
 	[CmdletBinding()]
 	Param
 	(
-    [parameter()]
-    [String]$Account
+    	[parameter(Mandatory=$true)]
+		[String] $Account
 	)
 
 	Begin
 	{
-		
 		Write-Debug "Checking for administrative privileges."
 		$User = [Security.Principal.WindowsIdentity]::GetCurrent()
 		$Role = (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
@@ -27,28 +26,20 @@ Function Get-UserLockout
 		{
 			Write-Warning "To perform some operations you must run an elevated Windows PowerShell console."	
 		} #End If !$Role
+	}
+	Process
+  	{
+		Get-ADUser $Account -Properties badpwdcount,lockedout
+		$Pdce=(Get-ADDomain).PDCEmulator
+		$GweParams=@{
+			'Computername'=$Pdce
+			'LogName'='Security'
+			'FilterXPath'="*[System[EventID=4740] and 
+			EventData[Data[@Name='TargetUserName']='$Account']]"
+		}
+		$Events=Get-WinEvent @GweParams
+		$Events | foreach {$_.Properties[1].Value}
+  	}
 
-  }
-
-  Process
-  {
-		$Username="anthony.cavella.adm"
-
-Get-ADUser $Username -Properties badpwdcount,lockedout
-
-$Pdce=(Get-ADDomain).PDCEmulator
-
-$GweParams=@{
-    'Computername'=$Pdce
-    'LogName'='Security'
-    'FilterXPath'="*[System[EventID=4740] and 
-    EventData[Data[@Name='TargetUserName']='$Username']]"
-}
-
-$Events=Get-WinEvent @GweParams
-
-$Events | foreach {$_.Properties[1].Value}
-  }
-
-  End{}
+	End{}
 }
