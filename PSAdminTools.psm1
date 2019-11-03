@@ -13,14 +13,14 @@ Function Get-UserLockout
 	Param
 	(
     	[parameter(Mandatory=$true)]
-		[String] $Account
+		[String] $User
 	)
 
 	Begin
 	{
 		Write-Debug "Checking for administrative privileges."
-		$User = [Security.Principal.WindowsIdentity]::GetCurrent()
-		$Role = (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+		$CurrentUser = [Security.Principal.WindowsIdentity]::GetCurrent()
+		$Role = (New-Object Security.Principal.WindowsPrincipal $CurrentUser).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 
 		If(!$Role)
 		{
@@ -32,13 +32,13 @@ Function Get-UserLockout
 	}
 	Process
   	{
-		Get-ADUser $Account -Properties badpwdcount,lockedout
+		Get-ADUser $User -Properties badpwdcount,lockedout
 		$Pdce=(Get-ADDomain).PDCEmulator
 		$GweParams=@{
 			'Computername'=$Pdce
 			'LogName'='Security'
 			'FilterXPath'="*[System[EventID=4740] and 
-			EventData[Data[@Name='TargetUserName']='$Account']]"
+			EventData[Data[@Name='TargetUserName']='$User']]"
 		}
 		$Events=Get-WinEvent @GweParams
 		$Events | ForEach-Object {$_.Properties[1].Value}
