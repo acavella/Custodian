@@ -24,8 +24,11 @@ Function Get-UserLockout
 
 		If(!$Role)
 		{
-			Write-Warning "To perform some operations you must run an elevated Windows PowerShell console."	
-		} #End If !$Role
+			Write-Warning "This module must be run-as an administrator."
+			Exit	
+		}
+		Write-Debug "Loading Active Directory module."
+		Import-Module -Name "ActiveDirectory"
 	}
 	Process
   	{
