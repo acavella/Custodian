@@ -16,13 +16,7 @@ Function New-BulkADUser
 	)
     Begin{
 		Import-Module ActiveDirectory
-		$User=@()
-		$Pass=@()
-		Import-Csv -Path $Path -Delimiter "," |`
-    	ForEach-Object {
-        	$User += $_.Username
-        	$Pass += $_.Password
-    	}
+		$ADUser=Import-Csv -Path $Path
 	}
     Process{
 
