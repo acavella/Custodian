@@ -7,7 +7,8 @@
     PowerShellVersion = '4.0'
     NestedModules = @(
     '.\functions\Get-ADLockoutDetails.psm1', 
-    '.\functions\Remove-OldFiles.psm1'
+    '.\functions\Remove-OldFiles.psm1',
+    '.\functions\New-BulkADUser.psm1'
   )
   FunctionsToExport = @('*')
 }
