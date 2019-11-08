@@ -37,4 +37,3 @@ The original source code for Talos is available to from [GitHub](https://github.
 
 [1]: https://en.wikipedia.org/wiki/Talos
 [2]: https://en.wikipedia.org/wiki/Hephaestus
-[logo]: ./images/logo.png
