@@ -1,8 +1,12 @@
-# Talos
-![Last Commit](https://img.shields.io/github/last-commit/altCipher/Talos?style=flat-square)
-![Release](https://img.shields.io/github/v/release/altCipher/Talos?include_prereleases&style=flat-square)
-![Open Issues](https://img.shields.io/github/issues-raw/altCipher/Talos?style=flat-square)
-![License](https://img.shields.io/github/license/altCipher/Talos?style=flat-square)
+<p align="center">
+    <img src="./images/logo.png">
+</p>
+<p align="center">
+<img src="https://img.shields.io/github/last-commit/altCipher/Talos?style=flat-square">
+<img src="https://img.shields.io/github/v/release/altCipher/Talos?include_prereleases&style=flat-square">
+<img src="https://img.shields.io/github/issues-raw/altCipher/Talos?style=flat-square">
+<img src="https://img.shields.io/github/license/altCipher/Talos?style=flat-square">
+</p>
 
 ## Description
 A PowerShell module designed to aide in Windows configuration and adminivative tasks. Talos is designed compliment the suite of tools available to system administrators, devops and security engineers.
@@ -28,3 +32,4 @@ The original source code for Talos is available to from [GitHub](https://github.
 
 [1]: https://en.wikipedia.org/wiki/Talos
 [2]: https://en.wikipedia.org/wiki/Hephaestus
+[logo]: ./images/logo.png
