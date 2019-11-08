@@ -6,7 +6,7 @@
     Description = 'Fully featured windows system administration and operations tools.'
     PowerShellVersion = '4.0'
     NestedModules = @(
-    '.\functions\Get-UserLockout.psm1', 
+    '.\functions\Get-ADLockoutDetails.psm1', 
     '.\functions\Remove-OldFiles.psm1'
   )
   FunctionsToExport = @('*')
