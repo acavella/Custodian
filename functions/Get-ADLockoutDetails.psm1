@@ -1,6 +1,6 @@
 <#
 	.SYNOPSIS
-		 Diagnos user account lockouts
+		 Diagnose user account lockouts
 	.DESCRIPTION
 		 Queries primary domain controller to find out why account is locked.
 	.PARAMETER Account
