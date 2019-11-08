@@ -21,9 +21,7 @@ Function Remove-OldFiles
         [parameter(Mandatory=$true)]
         [String] $Days,
         [parameter(Mandatory=$false)]
-        [Switch] $Recurse,
-        [parameter(Mandatory=$false)]
-        [Switch] $Test
+        [Switch] $Recurse
 	)
 
 	Begin
