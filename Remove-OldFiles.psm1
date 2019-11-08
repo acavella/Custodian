@@ -4,11 +4,11 @@
 	.DESCRIPTION
 		 Removes files older than X days in user specified directory.
 	.PARAMETER Path
-        Specify the path of files
+		Specify the path of files
+	.PARAMETER Days
+		Specify the number of days 
     .PARAMETER Recurse
         Recurse sub folders
-    .PARAMETER Test
-        Lists files to be removed without actually removing
 #>
 
 Function Remove-OldFiles
