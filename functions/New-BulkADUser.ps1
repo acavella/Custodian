@@ -16,10 +16,12 @@ Function New-BulkADUser
 	)
     Begin{
 		Import-Module ActiveDirectory
-		$ADUsers=Import-Csv -Path $Path
+		$csvfile=Import-Csv -Path $Path
 	}
     Process{
-
+		Foreach ($row in $csvfile){
+			Write-Host $row.username $row.password
+		}
 	}
     End{}
 }
