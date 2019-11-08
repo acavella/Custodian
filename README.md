@@ -14,6 +14,11 @@ A PowerShell module designed to aide in Windows configuration and adminivative t
 >
 >Talos was created by Hephaestus (/hɪˈfiːstəs, hɪˈfɛstəs/; eight spellings; Greek: Ἥφαιστος Hēphaistos) who was the Greek god of blacksmiths, metalworking, carpenters, craftsmen, artisans, sculptors, metallurgy, fire, and volcanoes. As a smithing god, Hephaestus made all the weapons of the gods in Olympus. He served as the blacksmith of the gods, and was worshipped in the manufacturing and industrial centers of Greece, particularly Athens.[<sup>Wikipedia</sup>][2] 
 
+## Requirements
+* PowerShell 4 or PowerShell Core 6.x
+* .NET Framework
+* ActiveDirectory Module (RSAT)
+
 ## List of Functions
 * Get-ADLockoutDetails: Diagnose common causes for AD account lockouts
 * New-BulkADUser: Create bulk AD accounts from CSV list
