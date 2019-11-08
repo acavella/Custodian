@@ -1,5 +1,5 @@
 @{
-    ModuleVersion = '0.0.2'
+    ModuleVersion = '0.0.3'
     GUID = 'e1e8d83f-b832-45d7-ac89-4b7e27b60b8f'
     Author = 'Tony Cavella'
     Copyright = 'Copyright (c) 2019 Tony Cavella, licensed under Apache 2.0 License.'
@@ -7,7 +7,8 @@
     PowerShellVersion = '4.0'
     NestedModules = @(
     '.\functions\Get-ADLockoutDetails.psm1', 
-    '.\functions\Remove-OldFiles.psm1'
+    '.\functions\Remove-OldFiles.psm1',
+    '.\functions\New-BulkADUser.psm1'
   )
   FunctionsToExport = @('*')
 }
