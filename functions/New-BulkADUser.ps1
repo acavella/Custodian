@@ -17,6 +17,7 @@ Function New-BulkADUser
     Begin{
 		Import-Module ActiveDirectory
 		$ADUser=Import-Csv -Path $Path
+		test
 	}
     Process{
 
