@@ -2,11 +2,15 @@
 	.SYNOPSIS
 		 Bulk creation of AD Users
 	.DESCRIPTION
-		 Bulk creation of AD users specified in CSV configuration file.
+		 Automatically creates AD users from CSV source file.
 	.PARAMETER Path
 		Specify the path of CSV parameter file
-	.EXAMPLE
-	
+	.INPUTS
+		Comma Seperated Values (CSV) containing account details.
+
+		Format:
+		username,firstname,lastname,password
+		<string>,<string>,<string>,<string>
 #>
 Function New-BulkADUser
 {
@@ -23,9 +27,9 @@ Function New-BulkADUser
     Process{
 		Foreach ($row in $csvfile){
 			$username=$row.username
-			$password=$row.password
 			$firstname=$row.firstname
 			$lastname=$row.lastname 
+			$password=$row.password
 			Write-Debug -Message "Creating account: $username"
 			New-ADUser -samaccountname $username -name "$lastname, $firstname" -givenname $firstname -surname $lastname -enabled $true -displayname "$lastname, $firstname" -accountpassword (convertto-securestring $password -asplaintext -force)
 		}
