@@ -8,7 +8,9 @@
     NestedModules = @(
     '.\functions\Get-ADLockoutDetails.ps1', 
     '.\functions\Remove-OldFiles.ps1',
-    '.\functions\New-BulkADUser.ps1'
+    '.\functions\New-BulkADUser.ps1',
+    '.\functions\Disable-InactiveAccount',
+    '.\functions\Get-HostDetails'
   )
   FunctionsToExport = @('*')
 }
