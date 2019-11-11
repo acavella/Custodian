@@ -18,7 +18,7 @@ Function Disable-InactiveAccount {
 	(
     	[parameter(Position = 0, Mandatory = $True)]
         [String] $Days,
-        [parameter(Position = 1, Mandatory = $True)]
+        [parameter(Position = 1, Mandatory = $False)]
 		[String] $LogFile = "C:\logfiles\",
 		[parameter(Position = 2, Mandatory = $False)]
 		[Alias('dryrun')]

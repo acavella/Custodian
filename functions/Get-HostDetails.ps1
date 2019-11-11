@@ -10,7 +10,7 @@ Function Disable-InactiveAccount {
 	[CmdletBinding()]
 	Param
 	(
-    	[parameter(Position = 0, Mandatory = $True)]
+    	[parameter(Position = 0, Mandatory = $False)]
         [String] $Computer = $env:COMPUTERNAME
 	)
     
