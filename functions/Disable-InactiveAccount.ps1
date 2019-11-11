@@ -17,7 +17,9 @@ Function Disable-InactiveAccount {
 	Param
 	(
     	[parameter(Mandatory=$true)]
-        [String] $Days
+        [String] $Days,
+        [parameter(Mandatory=$true)]
+        [String] $LogFile = "C:\logfiles\"
 	)
     Begin {
         #Import-Module ActiveDirectory
