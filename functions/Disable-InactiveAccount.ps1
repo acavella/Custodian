@@ -16,10 +16,13 @@ Function Disable-InactiveAccount {
 	[CmdletBinding()]
 	Param
 	(
-    	[parameter(Mandatory=$true)]
+    	[parameter(Position = 0, Mandatory = $True)]
         [String] $Days,
-        [parameter(Mandatory=$true)]
-        [String] $LogFile = "C:\logfiles\"
+        [parameter(Position = 1, Mandatory = $True)]
+		[String] $LogFile = "C:\logfiles\",
+		[parameter(Position = 2, Mandatory = $False)]
+		[Alias('dryrun')]
+		[Switch] $NoDisable
 	)
     Begin {
         #Import-Module ActiveDirectory
