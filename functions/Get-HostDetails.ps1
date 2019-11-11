@@ -1,33 +1,24 @@
 <#
 	.SYNOPSIS
-		 Disables inactive AD accounts
+		 Retrieves basic host details
 	.DESCRIPTION
-		 Disables AD accounts that have been inactive for a specified period of time.
-	.PARAMETER Days
-		Specify the number of days an account has been inactive.
-	.INPUTS
-		Comma Seperated Values (CSV) containing account details.
-
-		Format:
-		username,firstname,lastname,password
-		<string>,<string>,<string>,<string>
+		 Retrieves basic environmental details about the host.
+	.PARAMETER Computer
+		Specify the host to retrieve details from.
 #>
 Function Disable-InactiveAccount {
 	[CmdletBinding()]
 	Param
 	(
     	[parameter(Position = 0, Mandatory = $True)]
-        [String] $Days,
-        [parameter(Position = 1, Mandatory = $True)]
-		[String] $LogFile = "C:\logfiles\",
-		[parameter(Position = 2, Mandatory = $False)]
-		[Alias('dryrun')]
-		[Switch] $NoDisable
+        [String] $Computer = $env:COMPUTERNAME
 	)
-    Begin {
-        #Import-Module ActiveDirectory
-        
-    }
-    Process {}
-    End {}
+    
+    Write-Host "[+] Hostname = $env:COMPUTERNAME"
+    Write-Host "[+] Domain = $env:USERDOMAIN"
+    Write-Host "[+] User = $env:USERNAME"
+    Write-Host "[+] Processor: $env:PROCESSOR_IDENTIFIER"
+    Write-Host "[+] Architecture: $env:PROCESSOR_ARCHITECTURE"
+    Write-Host "[+] Cores: $env:NUMBER_OF_PROCESSORS"
+    
 }
