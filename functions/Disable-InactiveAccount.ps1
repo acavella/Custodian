@@ -12,17 +12,17 @@
 		username,firstname,lastname,password
 		<string>,<string>,<string>,<string>
 #>
-Function Disable-InactiveAccount
-{
+Function Disable-InactiveAccount {
 	[CmdletBinding()]
 	Param
 	(
     	[parameter(Mandatory=$true)]
         [String] $Days
 	)
-    Begin{
-		Import-Module ActiveDirectory
+    Begin {
+        #Import-Module ActiveDirectory
+        
     }
-    Process{}
-    End{}
+    Process {}
+    End {}
 }
