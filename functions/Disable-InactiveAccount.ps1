@@ -1,10 +1,10 @@
 <#
 	.SYNOPSIS
-		 Bulk creation of AD Users
+		 Disables inactive AD accounts
 	.DESCRIPTION
-		 Automatically creates AD users from CSV source file.
-	.PARAMETER Path
-		Specify the path of CSV parameter file
+		 Disables AD accounts that have been inactive for a specified period of time.
+	.PARAMETER Days
+		Specify the number of days an account has been inactive.
 	.INPUTS
 		Comma Seperated Values (CSV) containing account details.
 
@@ -22,7 +22,7 @@ Function Disable-InactiveAccount
 	)
     Begin{
 		Import-Module ActiveDirectory
-		$csvfile=Import-Csv -Path $Path
     }
     Process{}
     End{}
+}
