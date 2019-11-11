@@ -6,7 +6,7 @@
 	.PARAMETER Computer
 		Specify the host to retrieve details from.
 #>
-Function Disable-InactiveAccount {
+Function Get-HostDetails {
 	[CmdletBinding()]
 	Param
 	(
