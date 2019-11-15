@@ -14,11 +14,15 @@ Function Get-HostDetails {
         [String] $Computer = $env:COMPUTERNAME
 	)
     
-    Write-Host "[+] Hostname = $env:COMPUTERNAME"
-    Write-Host "[+] Domain = $env:USERDOMAIN"
-    Write-Host "[+] User = $env:USERNAME"
-    Write-Host "[+] Processor: $env:PROCESSOR_IDENTIFIER"
-    Write-Host "[+] Architecture: $env:PROCESSOR_ARCHITECTURE"
-    Write-Host "[+] Cores: $env:NUMBER_OF_PROCESSORS"
+    $system = @{
+		hostname = $env:COMPUTERNAME
+    	domain = $env:USERDOMAIN
+    	current_user = $env:USERNAME
+    	processor = $env:PROCESSOR_IDENTIFIER
+    	architecture = $env:PROCESSOR_ARCHITECTURE
+		core_count = $env:NUMBER_OF_PROCESSORS
+	}
+
+	Write-Output $system
     
 }
