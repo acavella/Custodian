@@ -1,11 +1,11 @@
 <p align="center">
+    <img src="./images/logo.png">
+</p>
+<p align="center">
 <img src="https://img.shields.io/github/last-commit/altCipher/Talos?style=flat-square">
 <img src="https://img.shields.io/github/v/release/altCipher/Talos?include_prereleases&style=flat-square">
 <img src="https://img.shields.io/github/issues-raw/altCipher/Talos?style=flat-square">
 <img src="https://img.shields.io/github/license/altCipher/Talos?style=flat-square">
-</p>
-<p align="center">
-    <img src="./images/logo.png">
 </p>
 
 ## Description
