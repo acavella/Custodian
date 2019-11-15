@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./images/logo.png">
+    <img src="./images/logo.png" width=300>
 </p>
 <p align="center">
 <img src="https://img.shields.io/github/last-commit/altCipher/Talos?style=flat-square">
