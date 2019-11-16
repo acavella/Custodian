@@ -34,11 +34,10 @@ Function Get-UserLockout
   	{
 		Get-ADUser $User -Properties badpwdcount,lockedout
 		$Pdce=(Get-ADDomain).PDCEmulator
-		$GweParams=@{
-			'Computername'=$Pdce
-			'LogName'='Security'
-			'FilterXPath'="*[System[EventID=4740] and 
-			EventData[Data[@Name='TargetUserName']='$User']]"
+		$GweParams = @{
+			Computername = $Pdce
+			LogName      = "Security"
+			FilterXPath  = "*[System[EventID=4740] and EventData[Data[@Name='TargetUserName']='$User']]"
 		}
 		$Events=Get-WinEvent @GweParams
 		$Events | ForEach-Object {$_.Properties[1].Value}
