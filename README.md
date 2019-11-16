@@ -6,6 +6,7 @@
 <img src="https://img.shields.io/github/v/release/altCipher/Custodian?include_prereleases&style=flat-square">
 <img src="https://img.shields.io/github/issues-raw/altCipher/Custodian?style=flat-square">
 <img src="https://img.shields.io/github/license/altCipher/Custodian?style=flat-square">
+<img alt="Gitter" src="https://img.shields.io/gitter/room/altCipher/Custodian?color=46bc99&style=flat-square">
 </p>
 
 ## Description
@@ -13,25 +14,27 @@ A PowerShell module designed to aide in Windows configuration and adminivative t
 >**cus·to·di·an** /kəsˈtōdēən/ *noun*: a person who has responsibility for or looks after something.
 
 ## Requirements
-* PowerShell 4 or PowerShell Core 6.x
+* PowerShell 4 or PowerShell Core 6
 * .NET Framework
 * ActiveDirectory Module (RSAT)
 
 ## List of Functions
+* Get-HostDetails: Retrieve host details to assist with troubleshooting 
 * Get-ADLockoutDetails: Diagnose common causes for AD account lockouts
 * New-BulkADUser: Create bulk AD accounts from CSV list
 * Remove-OldFiles: Delete files older than specified amount from a directory
 
 ## Installation
-Talos is available for installation in multiple ways.
+Custodian is available for installation in multiple ways.
 #### Source Code
-The original source code for Talos is available to from [GitHub](https://github.com/altCipher/Talos). Please note that this version is note digitally signed.  
+The original source code for Talos is available to from [GitHub](https://github.com/altCipher/Custodian). Please note that this version is note digitally signed.  
 #### PowerShell Gallery
 #### Chocolatey Install
+
+## Community and Discussion
+Please feel free to join the discussion with us on Gitter.  
+[![Gitter](https://badges.gitter.im/altCipher/Custodain.svg)](https://gitter.im/altCipher/Custodain?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Credit & Sources
 * [Wikipedia](https://en.wikipedia.org)
 * [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
-[1]: https://en.wikipedia.org/wiki/Talos
-[2]: https://en.wikipedia.org/wiki/Hephaestus
