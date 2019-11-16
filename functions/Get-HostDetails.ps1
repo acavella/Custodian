@@ -15,13 +15,13 @@ Function Get-HostDetails {
 	)
     
     $system = @{
-		hostname = $env:COMPUTERNAME
-    	domain = $env:USERDOMAIN
-    	current_user = $env:USERNAME
-    	processor = $env:PROCESSOR_IDENTIFIER
-    	architecture = $env:PROCESSOR_ARCHITECTURE
-		core_count = $env:NUMBER_OF_PROCESSORS
-		logical_drives = Get-PSDrive -PSProvider FileSystem
+		Hostname = $env:COMPUTERNAME
+    	HostDomain = $env:USERDOMAIN
+    	CurrentUser = $env:USERNAME
+    	Processor = $env:PROCESSOR_IDENTIFIER
+    	ProcessorArchitecture = $env:PROCESSOR_ARCHITECTURE
+		ProcessorCores = $env:NUMBER_OF_PROCESSORS
+		LogicalDrives = Get-PSDrive -PSProvider FileSystem
 	}
 
 	Write-Output $system
