@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/github/v/release/altCipher/Custodian?include_prereleases&style=flat-square">
 <img src="https://img.shields.io/github/issues-raw/altCipher/Custodian?style=flat-square">
 <img src="https://img.shields.io/github/license/altCipher/Custodian?style=flat-square">
-<img alt="Gitter" src="https://img.shields.io/gitter/room/altCipher/Custodian?color=46bc99&style=flat-square">
+<a href="https://gitter.im/altCipher/Custodain?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img alt="Gitter" src="https://img.shields.io/gitter/room/altCipher/Custodian?color=46bc99&style=flat-square"></a>
 </p>
 
 ## Description
