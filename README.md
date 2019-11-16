@@ -18,6 +18,7 @@ A PowerShell module designed to aide in Windows configuration and adminivative t
 * ActiveDirectory Module (RSAT)
 
 ## List of Functions
+* Get-HostDetails: Retrieve host details to assist with troubleshooting 
 * Get-ADLockoutDetails: Diagnose common causes for AD account lockouts
 * New-BulkADUser: Create bulk AD accounts from CSV list
 * Remove-OldFiles: Delete files older than specified amount from a directory
