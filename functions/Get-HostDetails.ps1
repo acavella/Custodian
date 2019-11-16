@@ -28,6 +28,6 @@ Function Get-HostDetails {
 		LogicalDrives = Get-PSDrive -PSProvider FileSystem
 	}
 
-	Write-Output $system.GetEnumerator() | Sort-Object -Property Name
+	Write-Output $system
     
 }
