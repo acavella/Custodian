@@ -14,7 +14,7 @@ A PowerShell module designed to aide in Windows configuration and adminivative t
 >**cus·to·di·an** /kəsˈtōdēən/ *noun*: a person who has responsibility for or looks after something.
 
 ## Requirements
-* PowerShell 4 or PowerShell Core 6.x
+* PowerShell 4 or PowerShell Core 6
 * .NET Framework
 * ActiveDirectory Module (RSAT)
 
@@ -30,6 +30,10 @@ Custodian is available for installation in multiple ways.
 The original source code for Talos is available to from [GitHub](https://github.com/altCipher/Custodian). Please note that this version is note digitally signed.  
 #### PowerShell Gallery
 #### Chocolatey Install
+
+## Community and Discussion
+Please feel free to join the discussion with us on Gitter.  
+[![Gitter](https://badges.gitter.im/altCipher/Custodain.svg)](https://gitter.im/altCipher/Custodain?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Credit & Sources
 * [Wikipedia](https://en.wikipedia.org)
