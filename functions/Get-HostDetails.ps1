@@ -13,7 +13,11 @@ Function Get-HostDetails {
     	[parameter(Position = 0, Mandatory = $False)]
         [String] $Computer = $env:COMPUTERNAME
 	)
-    
+	
+	If ($Computer -ne $env:COMPUTERNAME) {
+		Write-Warning -Message "Host details for remote systems are currently not supported, returning $env:COMPUTERNAME"
+	}
+	
     $system = @{
 		Hostname = $env:COMPUTERNAME
     	HostDomain = $env:USERDOMAIN
