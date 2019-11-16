@@ -6,6 +6,7 @@
 <img src="https://img.shields.io/github/v/release/altCipher/Custodian?include_prereleases&style=flat-square">
 <img src="https://img.shields.io/github/issues-raw/altCipher/Custodian?style=flat-square">
 <img src="https://img.shields.io/github/license/altCipher/Custodian?style=flat-square">
+<img alt="Gitter" src="https://img.shields.io/gitter/room/altCipher/Custodian?color=46bc99&style=flat-square">
 </p>
 
 ## Description
