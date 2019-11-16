@@ -21,6 +21,7 @@ Function Get-HostDetails {
     	processor = $env:PROCESSOR_IDENTIFIER
     	architecture = $env:PROCESSOR_ARCHITECTURE
 		core_count = $env:NUMBER_OF_PROCESSORS
+		logical_drives = Get-PSDrive -PSProvider FileSystem
 	}
 
 	Write-Output $system
