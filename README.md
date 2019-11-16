@@ -25,15 +25,12 @@ A PowerShell module designed to aide in Windows configuration and adminivative t
 * Remove-OldFiles: Delete files older than specified amount from a directory
 
 ## Installation
-Talos is available for installation in multiple ways.
+Custodian is available for installation in multiple ways.
 #### Source Code
-The original source code for Talos is available to from [GitHub](https://github.com/altCipher/Talos). Please note that this version is note digitally signed.  
+The original source code for Talos is available to from [GitHub](https://github.com/altCipher/Custodian). Please note that this version is note digitally signed.  
 #### PowerShell Gallery
 #### Chocolatey Install
 
 ## Credit & Sources
 * [Wikipedia](https://en.wikipedia.org)
 * [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
-[1]: https://en.wikipedia.org/wiki/Talos
-[2]: https://en.wikipedia.org/wiki/Hephaestus
