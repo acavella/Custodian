@@ -10,7 +10,7 @@
 </p>
 
 ## Description
-A PowerShell module designed to aide in Windows configuration and adminivative tasks. Custodian is designed compliment the suite of tools available to system administrators, dev-ops and security engineers.
+A PowerShell module designed to aide in Windows configuration and adminivative tasks. Custodian is designed to compliment the suite of tools available to system administrators, dev-ops and security engineers.
 >**cus·to·di·an** /kəsˈtōdēən/ *noun*: a person who has responsibility for or looks after something.
 
 ## Requirements
@@ -27,7 +27,7 @@ A PowerShell module designed to aide in Windows configuration and adminivative t
 ## Installation
 Custodian is available for installation in multiple ways.
 #### Source Code
-The original source code for Talos is available to from [GitHub](https://github.com/altCipher/Custodian). Please note that this version is note digitally signed.  
+The original source code for Custodian is available to from [GitHub](https://github.com/altCipher/Custodian). Please note that this version is not digitally signed.  
 #### PowerShell Gallery
 #### Chocolatey Install
 
