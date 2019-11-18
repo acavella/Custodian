@@ -18,6 +18,9 @@ Function Get-HostDetails {
 		Write-Warning -Message "Retrieving details for remote hosts is currently not supported, returning local details."
 	}
 
+	
+	$drives = Get-PSDrive -PSProvider Filesystem | Select-Object -Property Name,Used,Free
+	
     $system = @{
 		Hostname = $env:COMPUTERNAME
     	HostDomain = $env:USERDOMAIN
@@ -25,7 +28,7 @@ Function Get-HostDetails {
     	Processor = $env:PROCESSOR_IDENTIFIER
     	ProcessorArchitecture = $env:PROCESSOR_ARCHITECTURE
 		ProcessorCores = $env:NUMBER_OF_PROCESSORS
-		LogicalDrives = Get-PSDrive -PSProvider FileSystem
+		LogicalDrives = $drives
 	}
 
 	Write-Output $system
