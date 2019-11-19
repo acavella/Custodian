@@ -21,7 +21,7 @@ Function Get-HostDetails {
 	
 	$drives = Get-PSDrive -PSProvider Filesystem | Select-Object -Property Name,Used,Free
 	
-    $system = @{
+    $system = [ordered]@{
 		Hostname = $env:COMPUTERNAME
     	HostDomain = $env:USERDOMAIN
     	CurrentUser = $env:USERNAME
