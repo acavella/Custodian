@@ -30,15 +30,19 @@ A PowerShell module designed to aide in Windows configuration and adminivative t
 
 ## Installation
 Custodian is available for installation in multiple ways.
-#### Source Code
-The original source code for Custodian is available to from [GitHub](https://github.com/altCipher/Custodian). Please note that this version is not digitally signed.  
+#### Source code
+1. Download the [latest release][1] from the Custodian GitHub.
+2. Create a new folder `custodian` in the PowerShell modules folder.
+3. Copy the contents of the latest release to the `custodian` folder.
 #### PowerShell Gallery
-#### Chocolatey Install
+#### Chocolatey / NuGet Installation
 
 ## Community and Discussion
 Please feel free to join the discussion with us on Gitter.  
 [![Gitter](https://badges.gitter.im/altCipher/Custodian.svg)](https://gitter.im/altCipher/Custodian?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Credit & Sources
-* [Wikipedia](https://en.wikipedia.org)
 * [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+<!-- REFERENCE LINKS -->
+[1]: https://github.com/altCipher/Custodian/releases/latest
