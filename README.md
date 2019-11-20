@@ -1,12 +1,16 @@
+<!-- PROJECT LOGO -->
 <p align="center">
-    <img src="./images/logo.png" width=300>
+    <img src="./images/logo.png" width=400 alt="Custodian Logo">
 </p>
+<!-- PROJECT SHIELDS -->
 <p align="center">
 <img src="https://img.shields.io/github/last-commit/altCipher/Custodian?style=flat-square">
 <img src="https://img.shields.io/github/v/release/altCipher/Custodian?include_prereleases&style=flat-square">
 <img src="https://img.shields.io/github/issues-raw/altCipher/Custodian?style=flat-square">
 <img src="https://img.shields.io/github/license/altCipher/Custodian?style=flat-square">
-<a href="https://gitter.im/altCipher/Custodian?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img alt="Gitter" src="https://img.shields.io/gitter/room/altCipher/Custodian?color=46bc99&style=flat-square"></a>
+<a href="https://gitter.im/altCipher/Custodian?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
+    <img alt="Gitter" src="https://img.shields.io/gitter/room/altCipher/Custodian?color=46bc99&style=flat-square">
+</a>
 </p>
 
 ## Description
